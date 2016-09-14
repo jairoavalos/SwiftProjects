@@ -26,8 +26,13 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wZt-IH-dS5">
+                                        <gestureRecognizers/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <state key="normal" title="Tap"/>
+                                        <state key="normal" title="Tap or Hold"/>
+                                        <connections>
+                                            <action selector="tapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jCl-IL-SZh"/>
+                                            <outletCollection property="gestureRecognizers" destination="sqo-qN-yr2" appends="YES" id="yrg-43-mPM"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -39,10 +44,22 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Counter" id="J59-1f-ei7">
-                        <barButtonItem key="leftBarButtonItem" title="Reset" id="irX-nX-Nuy"/>
+                        <barButtonItem key="leftBarButtonItem" title="Reset" id="irX-nX-Nuy">
+                            <connections>
+                                <action selector="tapResetButton:" destination="BYZ-38-t0r" id="ZYh-pe-duR"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="countLabel" destination="7MA-oR-DOp" id="hOt-UU-p8v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="sqo-qN-yr2">
+                    <connections>
+                        <action selector="holdTapButton:" destination="BYZ-38-t0r" id="pgZ-R5-8N6"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1030" y="-544"/>
         </scene>

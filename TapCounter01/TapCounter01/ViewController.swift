@@ -10,16 +10,36 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // MARK: - Overrides
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    // MARK: - Outlets
+    @IBOutlet weak var countLabel: UILabel!
+    
+    var count = 0
+    
+    
+    // MARK: - Interactions
+    @IBAction func tapButton(_ sender: UIButton) {
+        increaseCount()
     }
-
-
+    
+    @IBAction func tapResetButton(_ sender: UIBarButtonItem) {
+        count = 0
+        countLabel.text = "0"
+    }
+    
+    @IBAction func holdTapButton(_ sender: UILongPressGestureRecognizer) {
+        increaseCount()
+    }
+    
+    func increaseCount() {
+        count += 1
+        countLabel.text = String(count)
+    }
 }
 
