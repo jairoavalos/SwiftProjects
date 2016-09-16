@@ -12,6 +12,7 @@
 		86E303CF1D8B87E20046E015 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86E303CD1D8B87E20046E015 /* Main.storyboard */; };
 		86E303D11D8B87E20046E015 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86E303D01D8B87E20046E015 /* Assets.xcassets */; };
 		86E303D41D8B87E20046E015 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86E303D21D8B87E20046E015 /* LaunchScreen.storyboard */; };
+		86E303DC1D8B9FAC0046E015 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 86E303DB1D8B9FAC0046E015 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		86E303D01D8B87E20046E015 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86E303D31D8B87E20046E015 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86E303D51D8B87E20046E015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86E303DB1D8B9FAC0046E015 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				86E303D01D8B87E20046E015 /* Assets.xcassets */,
 				86E303D21D8B87E20046E015 /* LaunchScreen.storyboard */,
 				86E303D51D8B87E20046E015 /* Info.plist */,
+				86E303DB1D8B9FAC0046E015 /* Settings.bundle */,
 			);
 			path = Writer;
 			sourceTree = "<group>";
@@ -124,6 +127,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86E303DC1D8B9FAC0046E015 /* Settings.bundle in Resources */,
 				86E303D41D8B87E20046E015 /* LaunchScreen.storyboard in Resources */,
 				86E303D11D8B87E20046E015 /* Assets.xcassets in Resources */,
 				86E303CF1D8B87E20046E015 /* Main.storyboard in Resources */,
