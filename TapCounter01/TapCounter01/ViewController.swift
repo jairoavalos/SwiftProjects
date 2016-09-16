@@ -20,7 +20,10 @@ class ViewController: UIViewController {
     // MARK: - Outlets
     @IBOutlet weak var countLabel: UILabel!
     
+    
+    // MARK: - Properties
     var count = 0
+    
     
     
     // MARK: - Interactions
@@ -37,6 +40,8 @@ class ViewController: UIViewController {
         increaseCount()
     }
     
+    
+    // MARK: - Functions
     func increaseCount() {
         count += 1
         countLabel.text = String(count)
